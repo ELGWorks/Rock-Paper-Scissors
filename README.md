@@ -43,7 +43,7 @@
 ## 🚀 Live Demo
 
 <p>
-  <a href="https://ELGWorks.github.io/Rock-Paper-Scissors/">
+  <a href="https://elgworks.github.io/Rock-Paper-Scissors/">
     Play the Game
   </a>
 </p>

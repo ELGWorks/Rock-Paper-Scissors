@@ -1,12 +1,6 @@
 # ✂️ Rock Paper Scissors Game
 
 <p align="center">
-  <a href="https://ELGWorks.github.io/REPO_NAME/">
-    <img src="assets/screenshot.png" alt="Preview" width="800"/>
-  </a>
-</p>
-
-<p align="center">
   <b>Classic Rock Paper Scissors game with score tracking, sound effects, and responsive design.</b>
 </p>
 
@@ -16,6 +10,7 @@
 
 <p align="center">
   <img src="assets/demo-gifs/game-demo.gif" width="400"/>
+  <b>Built using HTML5, CSS3, and JavaScript.</b>
 </p>
 
 ---
@@ -24,6 +19,7 @@
 
 <p align="center">
   <img src="assets/demo-gifs/responsive-demo.gif" width="400"/>
+  <b>Playable on mobiles!</b>
 </p>
 
 ---

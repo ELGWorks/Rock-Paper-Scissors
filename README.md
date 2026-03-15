@@ -9,7 +9,7 @@
 ## 🎮 Game Demo
 
 <p align="center">
-  <img src="assets/demo-gifs/game-demo.gif" width="400"/>
+  <img src="assets/demo-gifs/game-demo.gif"/>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 ## 📱 Responsive Demo
 
 <p align="center">
-  <img src="assets/demo-gifs/responsive-demo.gif" width="400"/>
+  <img src="assets/demo-gifs/responsive-demo.gif"/>
 </p>
 
 <p align="center">

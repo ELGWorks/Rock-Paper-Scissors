@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="style.css">
+        <script src ="script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="game-section">
+                <div class="game-container">
+                    <div class="game-title">
+                        <p class="title">Rock Paper Scissors</p>
+                    </div>
+
+                    <div class="buttons-container">
+                    <button onclick="playGame('rock')" class="btn-move"><img src="assets/images/rock-emoji.png" class="move-icon"></button>
+
+                    <button onclick="playGame('paper')" class="btn-move"><img src="assets/images/paper-emoji.png" class="move-icon"></button>
+
+                    <button onclick="playGame('scissors')" class="btn-move"><img src="assets/images/scissors-emoji.png" class="move-icon"></button>
+                    </div>
+
+                    <hr>
+
+                    <div class="result-container">
+                        <p class="text-result"></p>
+                    </div>
+
+                    <div class="picks-container">
+                        <p>
+                            <span class="playerPick">
+                            </span>
+                            
+                            <span class="computerPick">
+                            </span>
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="results-container">
+                        <p class="score">Wins: <span class="text-wins">0</span>, Losses: <span class="text-losses">0</span>, Ties: <span class="text-ties">0</span>
+                        </p>
+                    </div>
+
+                    <div class="reset-button-container">
+                        <button onclick="resetScore()" class="btn-reset">Reset Score</button>
+                        <button class="music-toggle">🔊</button>
+                    </div>
+
+                    <audio class="bg-music" loop>
+                        <source src="assets/sounds/music/massobeats - rose water.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+            </section>
+        </main>
+    </body>
+</html>

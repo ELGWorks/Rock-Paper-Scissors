@@ -6,6 +6,7 @@
             const tiesElement = document.querySelector('.text-ties');
             const clickSound = new Audio('assets/sounds/sfx/click.mp3');
             clickSound.volume = 0.5;
+            let isMuted = false;
 
 
             let score = JSON.parse(localStorage.getItem('score')) || {
@@ -15,7 +16,12 @@
             };
 
             function playGame(playerMove) {
-                clickSound.play();
+                playClickSound();
+
+                if (!isMuted && bgMusic.paused) {
+                    bgMusic.play();
+                }
+
                 const computerMove = pickComputerMove();
                 let result = '';
 
@@ -98,7 +104,7 @@
             }
 
             function resetScore() {
-                clickSound.play();
+                playClickSound();
                 score.wins = 0;
                 score.losses = 0;
                 score.ties = 0;
@@ -122,11 +128,20 @@
             const musicToggleBtn = document.querySelector('.music-toggle');
 
             musicToggleBtn.addEventListener('click', () => {
-                if (bgMusic.paused) {
-                    bgMusic.play();
-                    musicToggleBtn.textContent = '🔊';
-                } else {
+                isMuted = !isMuted;
+
+                if (isMuted) {
                     bgMusic.pause();
                     musicToggleBtn.textContent = '🔇';
+                } else {
+                    bgMusic.play();
+                    musicToggleBtn.textContent = '🔊';
                 }
             });
+
+            function playClickSound() {
+                if (!isMuted) {
+                    clickSound.currentTime = 0;
+                    clickSound.play();
+                }
+            }
